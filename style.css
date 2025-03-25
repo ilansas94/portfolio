@@ -1,54 +1,31 @@
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #333;
+    margin: 0;
+    font-family: sans-serif;
+    background: white;
+    color: black;
+    text-align: center;
 }
 header {
-  background: #f0f0f0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 20px;
 }
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #da2c5a;
-}
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #444;
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
 }
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 40px;
 }
-.card {
-  width: 250px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-}
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
 }
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #f9f9f9;
-}
-.project-page {
-  padding: 40px;
-  max-width: 900px;
-  margin: auto;
-}
-.figma-embed {
-  margin-top: 30px;
+    padding: 20px;
+    font-size: 0.8em;
 }
