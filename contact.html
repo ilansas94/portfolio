@@ -23,7 +23,7 @@
 <main style="max-width: 600px; margin: 4rem auto; text-align: center;">
 <div style="text-align:center;">
 <h2>CONTACT ME</h2>
-<form action="https://formspree.io/f/xldjlepz" method="POST" style="max-width: 400px; margin: auto;">
+<form action="https://formspree.io/f/xldjlepz" method="POST" style="max-width: 400px; margin: auto;" id="contact-form">
 <input name="name" placeholder="Full Name" required="" style="width:100%; padding:8px; margin-bottom:10px;" type="text"/><br/>
 <input name="email" placeholder="Email Address" required="" style="width:100%; padding:8px; margin-bottom:10px;" type="email"/><br/>
 <textarea name="message" placeholder="Your Message" required="" style="width:100%; padding:8px; height:150px;"></textarea><br/>
@@ -37,11 +37,14 @@
 <div style="text-align: center; margin-top: 40px;">
 <div style="margin-bottom: 10px;">
 <a href="https://www.instagram.com/art_and_hp/" target="_blank">
+
 </a>
 <a href="https://www.facebook.com/profile.php?id=61570651904704&amp;locale=he_IL" target="_blank">
+
 </a>
 </div>
 <div>
+
 </div>
 <div style="margin-top: 10px; font-size: 13px;">
         © Ilan Sastiel – Your Design, My Passion
@@ -49,11 +52,14 @@
 </div>
 <div class="social-icons">
 <a href="https://www.instagram.com/art_and_hp/" target="_blank">
+
 </a>
 <a href="https://www.facebook.com/profile.php?id=61570651904704&amp;locale=he_IL" target="_blank">
+
 </a>
 <div class="back-to-top"></div>
 </div>
+
 <div style="text-align: center; margin-top: 40px;">
 <a href="https://www.instagram.com/art_and_hp/" target="_blank">
 <img alt="Instagram" src="assets/images/INSTEGRAM_LOGO.png" style="width: 30px; height: 30px; margin: 0 10px;"/>
@@ -65,5 +71,19 @@
 <a href="#top" style="text-decoration: none; color: blue;">^</a>
 </div>
 </div>
+
+<script type="text/javascript">
+  emailjs.init("HCvMmI-NPJ0xrntQW"); // Public Key
+
+  document.getElementById("contact-form").onsubmit = function(event) {
+    event.preventDefault(); // Prevent default form submission
+    emailjs.sendForm("service_axz52ir", "template_uulgz2k", this)
+      .then(function(response) {
+        alert("Your message has been sent successfully!");
+      }, function(error) {
+        alert("Failed to send message. Please try again.");
+      });
+  }
+</script>
 </body>
 </html>
