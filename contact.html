@@ -1,27 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact – Ilan Sastiel</title>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 <header>
-    <nav>
-        <a href="index.html">Work</a>
+    <div class="logo-animation" style="text-align:center; margin-top: 2rem;">
+        <lottie-player src="./assets/LOGO.json" background="transparent" speed="1"
+        style="width: 200px; height: 200px;" autoplay></lottie-player>
+    </div>
+    <nav style="text-align:center;">
+        <a href="work.html">Work</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
 </header>
-<main>
-    <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Full Name" required><br><br>
-        <input type="email" placeholder="Email Address" required><br><br>
-        <textarea placeholder="Your Message" rows="5"></textarea><br><br>
-        <button type="submit">Send Message</button>
-    </form>
-</main>
-<footer><p>Powered by Ilan Sastiel</p></footer>
+
+        <nav>
+            
+            <a href="work.html">Work</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main style="max-width: 600px; margin: 4rem auto; text-align: center;">
+        <h2>CONTACT ME</h2>
+        <form>
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" style="width:100%; padding:10px; margin:10px 0;"><br>
+            
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" style="width:100%; padding:10px; margin:10px 0;"><br>
+            
+            <label for="message">Your Message</label><br>
+            <textarea id="message" name="message" rows="5" style="width:100%; padding:10px; margin:10px 0;"></textarea><br>
+            
+            <button type="submit" style="background-color: #2196F3; color: white; padding:10px 20px; border:none; cursor:pointer;">
+                Send Message
+            </button>
+        </form>
+    </main>
+    <footer style="text-align:center; padding: 2rem; color: #888; font-size: 0.9rem;">
+        <p>Powered by Webflow</p>
+        <p>
+            <a href="#"><img src="assets/images/facebook.png" alt="Facebook" style="height:20px; margin: 0 5px;"></a>
+            <a href="#"><img src="assets/images/twitter.png" alt="Twitter" style="height:20px; margin: 0 5px;"></a>
+            <a href="#"><img src="assets/images/email.png" alt="Email" style="height:20px; margin: 0 5px;"></a>
+        </p>
+    </footer>
 </body>
 </html>
