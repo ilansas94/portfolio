@@ -10,42 +10,9 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-<style>
-  #loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-  #loading-text {
-    font-size: 24px;
-    font-weight: bold;
-    animation: bounce 1s infinite;
-    color: #333;
-  }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-  }
-</style>
-<div id="loading-overlay">
-  <div id="loading-text">Loading prototype... Please wait</div>
-</div>
-<script>
-  window.addEventListener("load", function () {
-    document.getElementById("loading-overlay").style.display = "none";
-  });
-</script>
-
 <!-- Loading Overlay -->
 <div id="loader-overlay">
-  <div id="loader-text"></div>
+  <div id="loader-text">Loading prototype... Please wait</div>
 </div>
 <style>
   #loader-overlay {
@@ -94,7 +61,7 @@
     transition: opacity 0.5s ease;
 }
 </style>
-<div id="loadingScreen"></div>
+<div id="loadingScreen">Loading prototype... Please wait</div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var iframe = document.querySelector("iframe");
